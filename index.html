@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOS Burgers</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>MOS Burgers</h1>
-        <div class="buttons">
-            <a href="/add_customer.html">Add Customer</a>
-            <a href="/view_all_customers.html">View All Customers</a>
-        </div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MOS Burgers</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-[#1E1E1E]">
+    <!-- header -->
+    <header class="max-w-screen-xl mx-auto flex justify-between items-center p-4 bg-[#1E1E1E] text-[#F6C1DA]">
+        <h1 class="text-xl font-bold">MOS BURGERS</h1>
+        <nav class="flex gap-4">
+            <a href="pages/customer/customer.html" class="inline-flex justify-center items-center px-3 py-2 rounded-[5px] bg-[#454545] w-[130px] font-bold text-white hover:bg-neutral-700">Customer</a>
+            <a href="pages/customer/customer.html" class="inline-flex justify-center items-center px-3 py-2 rounded-[5px] bg-[#454545] w-[130px] font-bold text-white hover:bg-neutral-700">Order</a>
+            <a href="pages/customer/customer.html" class="inline-flex justify-center items-center px-3 py-2 rounded-[5px] bg-[#454545] w-[130px] font-bold text-white hover:bg-neutral-700">Items</a>
+            <a href="pages/customer/customer.html" class="inline-flex justify-center items-center px-3 py-2 rounded-[5px] bg-[#454545] w-[130px] font-bold text-white hover:bg-neutral-700">Recipt</a>
+        </nav>
+    </header>
+    <!-- hero -->
+    <section class="h-[calc(100vh-64px)] flex items-center justify-center bg-[#1E1E1E]">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
+            <!-- text -->
+            <div class="text-white space-y-6">
+                <h1 class="text-5xl font-extrabold leading-tight">Welcome to MOS Burgers</h1>
+                <p class="text-lg font-bold">Fresh, juicy, and made with love. Explore our menu, place your order,and taste the difference today!</p>
+                <div class="flex gap-4">
+                    <a href="#" class="inline-block px-5 py-3 rounded-[5px] bg-[#a75a22] text-[#1E1E1E] font-bold ">Order Now</a>
+                    <a href="#" class="inline-block px-5 py-3 rounded-[5px] border border-[#a75a22] text-[#a75a22] font-bold">View Items</a>
+                </div>
+            </div>
+            <!-- img -->
+            <div class="flex justify-center">
+                <img src="img/buger.jpg" alt="burger" class="rounded-[10px] shadow-lg object-cover w-full max-w-[400px]"/>
+            </div>
+      </div>
+    </section>
+    </body>
 </html>
