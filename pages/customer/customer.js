@@ -20,6 +20,7 @@ function btnAddCustomerOnClick() {
     customerList.push(newCustomer);
 
     localStorage.setItem("customerList", JSON.stringify(customerList));
+    
     btnReloadOnClick();
 
     document.getElementById("customerForm").reset();

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#1E1E1E]">
+    <!-- header -->
+    <header
+      class="max-w-screen-xl mx-auto flex justify-between items-center p-4 text-[#F6C1DA]"
+    >
+      <h1 class="text-xl font-bold"><a href="https://deelaka-ransilu.github.io/mos-burgers/">MOS BURGERS</a></h1>
+      <nav class="flex gap-4">
+        <a
+          href="/pages/customer/customer.html"
+          class="px-3 py-2 rounded bg-[#454545] w-[130px] text-center font-bold text-white hover:bg-neutral-700"
+          >Customer</a
+        >
+        <a
+          href="#"
+          class="px-3 py-2 rounded bg-[#454545] w-[130px] text-center font-bold text-white hover:bg-neutral-700"
+          >Order</a
+        >
+        <a
+          href="item.html"
+          class="px-3 py-2 rounded bg-[#454545] w-[130px] text-center font-bold text-white hover:bg-neutral-700"
+          >Items</a
+        >
+        <a
+          href="#"
+          class="px-3 py-2 rounded bg-[#454545] w-[130px] text-center font-bold text-white hover:bg-neutral-700"
+          >Receipt</a
+        >
+      </nav>
+    </header>
+
+    <!-- search -->
+    <div class="max-w-screen-xl mx-auto grid grid-cols-12 gap-4 p-4">
+      <div class="col-span-3">
+        <input
+          placeholder="Search items..."
+          class="w-full h-10 px-3 py-2 rounded bg-zinc-800 text-white placeholder-gray-400 focus:ring focus:ring-[#F6C1DA]"
+        />
+      </div>
+      <div class="col-span-1">
+        <button
+          class="w-full h-10 px-4 py-2 rounded bg-[#F6C1DA] text-[#1E1E1E] font-bold hover:bg-pink-300 transition"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- main content area -->
+    <div class="max-w-screen-xl mx-auto grid grid-cols-12 gap-4 p-4">
+      <!-- left 8 columns (category + item listing stacked) -->
+      <div class="col-span-8 flex flex-col gap-4">
+        <!-- category buttons -->
+        <div class="grid grid-cols-12 gap-4">
+          <button
+            class="col-span-2 h-10 bg-rose-500 text-white rounded hover:bg-rose-600"
+          >
+            Burgers
+          </button>
+          <button
+            class="col-span-2 h-10 bg-violet-400 text-white rounded hover:bg-violet-500"
+          >
+            Submarines
+          </button>
+          <button
+            class="col-span-2 h-10 bg-yellow-400 text-black rounded hover:bg-yellow-500"
+          >
+            Fries
+          </button>
+          <button
+            class="col-span-2 h-10 bg-pink-400 text-white rounded hover:bg-pink-500"
+          >
+            Pasta
+          </button>
+          <button
+            class="col-span-2 h-10 bg-lime-400 text-black rounded hover:bg-lime-500"
+          >
+            Chicken
+          </button>
+          <button
+            class="col-span-2 h-10 bg-sky-400 text-white rounded hover:bg-sky-500"
+          >
+            Beverages
+          </button>
+        </div>
+
+        <!-- item listing section under the category buttons -->
+        <div class="grid grid-cols-12 gap-4">
+          <!-- item card -->
+          <div
+            class="col-span-4 bg-zinc-700 rounded-lg p-4 flex flex-col justify-between h-[310px]"
+          >
+            <div class="text-center">
+              <h3 class="text-white font-bold">Classic Burger (L)</h3>
+              <span class="text-gray-400 text-xs">B1001</span>
+            </div>
+            <div class="flex justify-center my-2">
+              <img
+                src="https://placehold.co/103x103"
+                class="w-24 h-24 rounded"
+              />
+            </div>
+            <div class="text-white text-xs space-y-1">
+              <div class="flex justify-between">
+                <span>Price</span><span>750.00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Qty</span><span>10</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Exp</span><span>mm-dd-yyyy</span>
+              </div>
+            </div>
+            <div class="flex justify-between gap-1 mt-2">
+              <button
+                class="flex-1 bg-green-500 text-black text-xs py-1 rounded hover:bg-green-600"
+              >
+                Update
+              </button>
+              <button
+                class="flex-1 bg-orange-400 text-black text-xs py-1 rounded hover:bg-orange-500"
+              >
+                Add
+              </button>
+              <button
+                class="flex-1 bg-red-600 text-black text-xs py-1 rounded hover:bg-red-700"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+
+          <!-- you can copy/paste more item cards here -->
+        </div>
+      </div>
+
+      <!-- right 4 columns (cart) -->
+      <div
+        class="col-span-4 bg-[#2E2E2E] rounded p-4 h-[750px] overflow-y-auto"
+      >
+        <h2 class="text-white font-bold mb-2">Cart</h2>
+        <div class="space-y-2">
+          <div
+            class="flex justify-between text-white border-b border-gray-600 py-2"
+          >
+            <span>Item 1</span><span>(2)</span><span>$12.00</span>
+          </div>
+          <div
+            class="flex justify-between text-white border-b border-gray-600 py-2"
+          >
+            <span>Item 2</span><span>(1)</span><span>$8.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
