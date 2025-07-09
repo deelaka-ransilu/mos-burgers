@@ -47,6 +47,7 @@
       <div class="col-span-1">
         <button
           class="w-full h-10 px-4 py-2 rounded bg-[#F6C1DA] text-[#1E1E1E] font-bold hover:bg-pink-300 transition"
+          onclick="searchBtnOnClick()"
         >
           Search
         </button>
@@ -61,32 +62,38 @@
         <div class="grid grid-cols-12 gap-4">
           <button
             class="col-span-2 h-10 bg-rose-500 text-white rounded hover:bg-rose-600"
-          >
+            onclick="burgersBtnOnClick()"
+            >
             Burgers
           </button>
           <button
             class="col-span-2 h-10 bg-violet-400 text-white rounded hover:bg-violet-500"
-          >
+            onclick="submarinesBtnOnClick()"
+            >
             Submarines
           </button>
           <button
             class="col-span-2 h-10 bg-yellow-400 text-black rounded hover:bg-yellow-500"
-          >
+            onclick="friesBtnOnClick()"
+            >
             Fries
           </button>
           <button
             class="col-span-2 h-10 bg-pink-400 text-white rounded hover:bg-pink-500"
-          >
+            onclick="pastaBtnOnClick()"
+            >
             Pasta
           </button>
           <button
             class="col-span-2 h-10 bg-lime-400 text-black rounded hover:bg-lime-500"
-          >
+            onclick="chickenBtnOnClick()"
+            >
             Chicken
           </button>
           <button
             class="col-span-2 h-10 bg-sky-400 text-white rounded hover:bg-sky-500"
-          >
+            onclick="beveragesBtnOnClick()"
+            >
             Beverages
           </button>
         </div>
@@ -136,8 +143,6 @@
               </button>
             </div>
           </div>
-
-          <!-- you can copy/paste more item cards here -->
         </div>
       </div>
 
@@ -160,5 +165,6 @@
         </div>
       </div>
     </div>
+    <script src="item.js"></script>
   </body>
 </html>
