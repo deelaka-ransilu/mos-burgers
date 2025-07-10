@@ -11,7 +11,9 @@
     <header
       class="max-w-screen-xl mx-auto flex justify-between items-center p-4 text-[#F6C1DA]"
     >
-      <h1 class="text-xl font-bold"><a href="https://deelaka-ransilu.github.io/mos-burgers/">MOS BURGERS</a></h1>
+      <h1 class="text-xl font-bold">
+        <a href="https://deelaka-ransilu.github.io/mos-burgers/">MOS BURGERS</a>
+      </h1>
       <nav class="flex gap-4">
         <a
           href="/pages/customer/customer.html"
@@ -63,37 +65,37 @@
           <button
             class="col-span-2 h-10 bg-rose-500 text-white rounded hover:bg-rose-600"
             onclick="burgersBtnOnClick()"
-            >
+          >
             Burgers
           </button>
           <button
             class="col-span-2 h-10 bg-violet-400 text-white rounded hover:bg-violet-500"
             onclick="submarinesBtnOnClick()"
-            >
+          >
             Submarines
           </button>
           <button
             class="col-span-2 h-10 bg-yellow-400 text-black rounded hover:bg-yellow-500"
             onclick="friesBtnOnClick()"
-            >
+          >
             Fries
           </button>
           <button
             class="col-span-2 h-10 bg-pink-400 text-white rounded hover:bg-pink-500"
             onclick="pastaBtnOnClick()"
-            >
+          >
             Pasta
           </button>
           <button
             class="col-span-2 h-10 bg-lime-400 text-black rounded hover:bg-lime-500"
             onclick="chickenBtnOnClick()"
-            >
+          >
             Chicken
           </button>
           <button
             class="col-span-2 h-10 bg-sky-400 text-white rounded hover:bg-sky-500"
             onclick="beveragesBtnOnClick()"
-            >
+          >
             Beverages
           </button>
         </div>
@@ -147,21 +149,13 @@
       </div>
 
       <!-- right 4 columns (cart) -->
+      <!-- Right side cart container (col-span-4) -->
       <div
         class="col-span-4 bg-[#2E2E2E] rounded p-4 h-[750px] overflow-y-auto"
       >
-        <h2 class="text-white font-bold mb-2">Cart</h2>
+        <h2 class="text-white font-bold mb-4 text-lg">Cart</h2>
         <div class="space-y-2">
-          <div
-            class="flex justify-between text-white border-b border-gray-600 py-2"
-          >
-            <span>Item 1</span><span>(2)</span><span>$12.00</span>
-          </div>
-          <div
-            class="flex justify-between text-white border-b border-gray-600 py-2"
-          >
-            <span>Item 2</span><span>(1)</span><span>$8.00</span>
-          </div>
+          <!-- JS will inject items here -->
         </div>
       </div>
     </div>
